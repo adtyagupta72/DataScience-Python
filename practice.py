@@ -135,3 +135,10 @@ x = 3
 print(x < 5 and x < 10)
 print(x < 5 or x < 4)
 print(not(x < 5 and x < 10))
+
+y = 3 #4
+
+print(x is y)
+print(x is not y)
+
+#https://docs.google.com/presentation/d/1iYnPUEG2CdiJKyHk5_CdCgpErRTiDmttj8vM6c9zcAQ/edit?slide=id.g30bcca960a3_0_8#slide=id.g30bcca960a3_0_8
