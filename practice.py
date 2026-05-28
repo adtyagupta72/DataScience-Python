@@ -58,14 +58,80 @@ iwuebv aiweubv oiwquebv oiqwebuvoiquwebv iuqubwev
 # x = None
 # print(x, type(x))
 
-print("10 + 2 = ", 10 + 2)
-print("10 - 2 = ", 10 - 2)
-print("10 * 2 = ", 10 * 2)
-print("10 / 2 = ", 10 / 2)
-print("10 % 2 = ", 10 % 2)
-print("9 % 5 = ", 9 % 5)
-print("10 // 3 = ", 10 // 3)
-print("2 ** 3 = ", 2 ** 3)
+#Operators
 
-print("5 % 3 = ", 5 % 3)
-print("5 % -3 = ", 5 % -3)
+# print("10 + 2 = ", 10 + 2)
+# print("10 - 2 = ", 10 - 2)
+# print("10 * 2 = ", 10 * 2)
+# print("10 / 2 = ", 10 / 2)
+# print("10 % 2 = ", 10 % 2)
+# print("9 % 5 = ", 9 % 5)
+# print("10 // 3 = ", 10 // 3)
+# print("2 ** 3 = ", 2 ** 3)
+
+'''
+    x       y       x & y
+    0       0       0
+    1       0       0
+    0       1       0
+    1       1       1
+
+    x       y       x | y
+    0       0       0
+    1       0       1
+    0       1       1
+    1       1       1
+
+
+0010 1010   => 5
+1100 1101   => 2
+----------
+0000 1000   => 
+
+'''
+
+# print(5 & 3)
+# x = 5
+# print(x)
+# x += 3
+# print(x)
+# x -= 2
+# print(x)
+# x *= 3
+# print(x)
+# x /= 2
+# print(x)
+# x //=3
+# print(x)
+# x **= 2
+# print(x)
+# x = 5
+# x %= 3
+# print(x)
+# x |= 2
+# print(x)
+# x ^= 3
+# print(x)
+
+
+# a = 10
+# b = 20
+
+# print("a == b: ", a == b)
+# print("a == 10: ", a == 10)
+
+# print("a != b: ", a != b)
+# print("a != 10: ", a != 10)
+
+# print("a > b: ", a > b)
+# print("a < b: ", a < b)
+
+# print("a <= b: ", a <= b)
+# print("a >= b: ", a >= b)
+# print("a >= 10: ", a >= 10)
+
+x = 3
+
+print(x < 5 and x < 10)
+print(x < 5 or x < 4)
+print(not(x < 5 and x < 10))
