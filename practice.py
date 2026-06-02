@@ -49,7 +49,7 @@ iwuebv aiweubv oiwquebv oiqwebuvoiquwebv iuqubwev
 # print(x, type(x))
 # x = True		
 # print(x, type(x))				
-# x = b"Hello"					
+# x = b"Hello"
 # print(x, type(x))
 # x = bytearray(5)				
 # print(x, type(x))
