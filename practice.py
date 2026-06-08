@@ -130,15 +130,31 @@ iwuebv aiweubv oiwquebv oiqwebuvoiquwebv iuqubwev
 # print("a >= b: ", a >= b)
 # print("a >= 10: ", a >= 10)
 
-x = 3
+# x = 3
 
-print(x < 5 and x < 10)
-print(x < 5 or x < 4)
-print(not(x < 5 and x < 10))
+# print(x < 5 and x < 10)
+# print(x < 5 or x < 4)
+# print(not(x < 5 and x < 10))
 
-y = 3 #4
+# y = 3 #4
 
-print(x is y)
-print(x is not y)
+# print(x is y)
+# print(x is not y)
 
-#https://docs.google.com/presentation/d/1iYnPUEG2CdiJKyHk5_CdCgpErRTiDmttj8vM6c9zcAQ/edit?slide=id.g30bcca960a3_0_8#slide=id.g30bcca960a3_0_8
+# x = int(input("Enter first value for sum: "))
+# y = int(input("Enter second value for sum: "))
+# x = input("Enter first value for sum: ")
+# y = input("Enter second value for sum: ")
+# z = x + y
+# z = int(x) + int(y)
+# print("Sum: ",z)
+
+# print(1 + "2")
+# print("1" + 2)
+# int(x + y)
+
+p = 5
+b = 5
+
+h = (((p ** 2) + (b ** 2)) ** (1/2))
+print(h)
