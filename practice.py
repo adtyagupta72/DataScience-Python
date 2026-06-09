@@ -153,8 +153,51 @@ iwuebv aiweubv oiwquebv oiqwebuvoiquwebv iuqubwev
 # print("1" + 2)
 # int(x + y)
 
-p = 5
-b = 5
+# p = 5
+# b = 5
 
-h = (((p ** 2) + (b ** 2)) ** (1/2))
-print(h)
+# h = (((p ** 2) + (b ** 2)) ** (1/2))
+# print(h)
+
+# print("+----------+")
+# print("|          |")
+# print("|          |")
+# print("|          |")
+# print("|          |")
+# print("|          |")
+# print("+----------+")
+
+
+# print("+" + "-" * 10 + "+")
+# print(("|" + " " * 10 + "|\n") * 5, end="")
+# print("+" + "-" * 10 + "+")
+
+# print("Hello How are you?", end="\n")
+# print("I am good")
+
+# city = 'Bhopal'
+#       012345   ← index positions
+#      -6-5-4-3-2-1  ← negative indices (from end)
+ 
+# print(city[0])     # B   (first character)
+# print(city[-6])
+# print(city[2])     # o
+# print(city[-1])    # l   (last character)
+# print(city[-3])    # p
+
+# print(2 == 2)
+# print(2 == 2.0)
+
+# var = 0  # Assigning 0 to var
+# print(var == 0)
+
+# var = 1  # Assigning 1 to var
+# print(var == 0)
+
+# print(("+" + "-" * 10 + "+" + "\n")+ (("|" + ' ' * 10 + "|\n")*5) + ("+" + "-" * 10 + "+") )
+
+var = 11
+
+if var == 11:
+    print("Var is 11")
+print("Hello")
