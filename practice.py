@@ -216,16 +216,35 @@ iwuebv aiweubv oiwquebv oiqwebuvoiquwebv iuqubwev
 # print("The larger number is:", larger_number)
 
 
-number1 = int(input("Enter the first number: "))
-number2 = int(input("Enter the second number: "))
-number3 = int(input("Enter the third number: "))
+# number1 = int(input("Enter the first number: "))
+# number2 = int(input("Enter the second number: "))
+# number3 = int(input("Enter the third number: "))
  
-largest_number = number1
+# largest_number = number1
  
-if number2 > largest_number:
-    largest_number = number2
+# if number2 > largest_number:
+#     largest_number = number2
  
-if number3 > largest_number:
-    largest_number = number3
+# if number3 > largest_number:
+#     largest_number = number3
+# largest_number = max(number1, number2, number3)
+# lowest_number = min(number1, number2, number3)
+
+ 
+# print("The largest number is:", largest_number)
+# print("The lowest number is:", lowest_number)
+
+# while True:
+#     print("I'm stuck inside a loop.")
+
+largest_number = -999999999
+ 
+number = int(input("Enter a number or type -1 to stop: "))
+ 
+while number != -1:
+    if number > largest_number:
+        largest_number = number
+    number = int(input("Enter a number or type -1 to stop: "))
  
 print("The largest number is:", largest_number)
+
