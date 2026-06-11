@@ -237,14 +237,71 @@ iwuebv aiweubv oiwquebv oiqwebuvoiquwebv iuqubwev
 # while True:
 #     print("I'm stuck inside a loop.")
 
-largest_number = -999999999
+# largest_number = -999999999
+
+# number = int(input("Enter a number or type -1 to stop: "))
  
-number = int(input("Enter a number or type -1 to stop: "))
+# while number != -1:
+#     if number > largest_number:
+#         largest_number = number
+#     number = int(input("Enter a number or type -1 to stop: "))
  
-while number != -1:
-    if number > largest_number:
-        largest_number = number
-    number = int(input("Enter a number or type -1 to stop: "))
- 
-print("The largest number is:", largest_number)
+# print("The largest number is:", largest_number)
+
+'''
+input -> num
+num -> check => even and odd
+check -> even_count, odd_count
+num = 0 -> exit
+'''
+
+# num = int(input("Please enter a number:"))
+# even_count = 0
+# odd_count = 0
+# while num != 0:
+#     if num % 2 == 0:
+#         even_count += 1 # even_count = even_count + 1
+#     else:
+#         odd_count += 1
+    
+#     num = int(input("Please enter a number:"))
+
+# print("Even:", even_count)
+# print("Odd:", odd_count)
+
+# print(bool(5))
+# print(bool(1))
+# print(bool(-1))
+# print(bool(0))
+
+# print(bool("a"))
+# print(bool("b"))
+# print(bool(" "))
+# print(bool(""))
+
+# print(bool())
+# print(bool(None))
+# print(bool(NULL))
+# print(bool(Null))
+
+# counter = 5
+# while counter != 0:
+#     print("Inside the loop.", counter)
+#     counter -= 1
+# print("Outside the loop.", counter)
+
+# counter = 5
+# while counter:
+#     print("Inside the loop.", counter)
+#     counter -= 1
+# print("Outside the loop.", counter)	
+
+
+# print(range(100))
+
+# for counter in range(10):
+#     print("Counter :", counter)
+
+for counter in range(2, 8):
+    print("Counter: ", counter)
 
