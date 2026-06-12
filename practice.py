@@ -302,6 +302,51 @@ num = 0 -> exit
 # for counter in range(10):
 #     print("Counter :", counter)
 
-for counter in range(2, 8):
-    print("Counter: ", counter)
+# for counter in range(2, 8):
+#     print("Counter: ", counter)
+
+# print("The break instruction:")
+# for counter in range(1, 6):
+#     if counter == 3:
+#         continue
+#     print("Inside the loop.", counter)
+# print("Outside the loop.")
+
+# largest_number = -99999999
+# counter = 0
+# while True:
+#     number = int(input("Enter a number or type -1 to end the program: "))
+#     if number == -1:
+#         break
+#     counter += 1
+#     if number > largest_number:
+#         largest_number = number
+
+# if counter != 0:
+#     print("The largest number is", largest_number)
+# else:
+#     print("You haven't entered any number.")
+
+# largest_number = -99999999
+# counter = 0
+# number = int(input("Enter a number or type -1 to end program: "))
+# while number != -1:
+#     # if number == -1:
+#     #     continue
+#     counter += 1
+#     if number > largest_number:
+#         largest_number = number
+#     number = int(input("Enter a number or type -1 to end the program: "))
+
+# if counter:
+#     print("The largest number is", largest_number)
+# else:
+#     print("You haven't entered any number.")
+
+counter = 1
+while counter < 5:
+    print(counter)
+    counter += 1
+else:
+    print("else:", counter)
 
