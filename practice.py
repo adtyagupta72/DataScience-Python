@@ -343,10 +343,36 @@ num = 0 -> exit
 # else:
 #     print("You haven't entered any number.")
 
-counter = 1
-while counter < 5:
-    print(counter)
-    counter += 1
-else:
-    print("else:", counter)
+# counter = 1
+# while counter < 5:
+#     print(counter)
+#     counter += 1
+# else:
+#     print("else:", counter)
 
+# for counter in range(5):
+#     print(counter)
+# else:
+#     print("else:", counter)
+
+# counter = 111
+# for counter in range(2, 1):
+#     print(counter)
+# else:
+#     print("else:", counter)
+
+blocks = int(input("Enter number of blocks:"))
+counter = 0
+while(blocks - counter > 0):
+    counter += 1
+    blocks = blocks - counter
+    
+
+print(f'Hieght of the Pyramid: {counter}')
+
+# print("Hello How are you",counter, "wefjb", blocks)
+
+'''
+blocks      13  12  10  7   3
+counter     1   2   3   4   5
+'''
