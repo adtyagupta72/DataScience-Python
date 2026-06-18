@@ -385,3 +385,13 @@ numbers = [10, 5, 7, 2, 1]
 
 print(numbers)
 print(type(numbers))
+
+print(numbers[0])
+print(numbers[1])
+print(numbers[2])
+print(numbers[3])
+print(numbers[4])
+#print(numbers[5])
+
+numbers[0] = 100
+print(numbers)
