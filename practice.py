@@ -361,14 +361,14 @@ num = 0 -> exit
 # else:
 #     print("else:", counter)
 
-blocks = int(input("Enter number of blocks:"))
-counter = 0
-while(blocks - counter > 0):
-    counter += 1
-    blocks = blocks - counter
+# blocks = int(input("Enter number of blocks:"))
+# counter = 0
+# while(blocks - counter > 0):
+#     counter += 1
+#     blocks = blocks - counter
     
 
-print(f'Hieght of the Pyramid: {counter}')
+# print(f'Hieght of the Pyramid: {counter}')
 
 # print("Hello How are you",counter, "wefjb", blocks)
 
