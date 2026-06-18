@@ -376,3 +376,12 @@ num = 0 -> exit
 blocks      13  12  10  7   3
 counter     1   2   3   4   5
 '''
+# git add *
+# git commit -m "Explain the commit here"
+# git push
+
+# Lists
+numbers = [10, 5, 7, 2, 1]
+
+print(numbers)
+print(type(numbers))
