@@ -397,31 +397,41 @@ counter     1   2   3   4   5
 # numbers[0] = 100    # Writing an element
 # print(numbers)
 
-numbers = [10, 5, 7, 2, 1]
-print("Original list contents:", numbers)  # Printing original list contents. 
-numbers[0] = 111
-print("New list contents: ", numbers)  # Current list contents.
+# numbers = [10, 5, 7, 2, 1]
+# print("Original list contents:", numbers)  # Printing original list contents. 
+# numbers[0] = 111
+# print("New list contents: ", numbers)  # Current list contents.
 
-print("Original list contents:", numbers)  # Printing original list contents.
-numbers[1] = numbers[4]  # Copying value of the fifth element to the second.
-print("New list contents:", numbers)  # Printing current list contents.
+# print("Original list contents:", numbers)  # Printing original list contents.
+# numbers[1] = numbers[4]  # Copying value of the fifth element to the second.
+# print("New list contents:", numbers)  # Printing current list contents.
 
-print(numbers)
-print(len(numbers))
+# print(numbers)
+# print(len(numbers))
 
-del numbers[1]
+# del numbers[1]
 
-print(numbers)
-print(len(numbers))
+# print(numbers)
+# print(len(numbers))
 
-numbers = [111, 7, 2, 1, " "]
-print(numbers[-1])
+# numbers = [111, 7, 2, 1, " "]
+# print(numbers[-1])
 
-print(numbers[-2])
+# print(numbers[-2])
 
-print(numbers[-4])
-# print(numbers[-5])
+# print(numbers[-4])
+# # print(numbers[-5])
 
-print(numbers[4])
+# print(numbers[4])
 
-print(numbers[len(numbers) * -1])
+# print(numbers[len(numbers) * -1])
+
+list = [5,4,3,2,1]
+print(list)
+print(f'Length of List:{len(list)}')
+list.append(6)
+print(list)
+print(f'Length of List:{len(list)}')
+
+# print("Hello How are you?"+list)
+print(f'efiuh uwhefiuhwef {list}')
