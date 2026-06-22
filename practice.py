@@ -426,12 +426,44 @@ counter     1   2   3   4   5
 
 # print(numbers[len(numbers) * -1])
 
-list = [5,4,3,2,1]
-print(list)
-print(f'Length of List:{len(list)}')
-list.append(6)
-print(list)
-print(f'Length of List:{len(list)}')
+# list = [5,4,3,2,1]
+# print(list)
+# print(f'Length of List:{len(list)}')
+# list.append(6)
+# print(list)
+# print(f'Length of List:{len(list)}')
 
-# print("Hello How are you?"+list)
-print(f'efiuh uwhefiuhwef {list}')
+# # print("Hello How are you?"+list)
+# print(f'efiuh uwhefiuhwef {list}')
+
+# numbers = [111, 7, 2, 1]
+# print(len(numbers))
+# print(numbers)
+
+# numbers.append(4)
+
+# print(len(numbers))
+# print(numbers)
+
+# numbers.insert(0, 222)
+# print(len(numbers))
+# print(numbers)
+
+# my_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# for count in range(len(my_list)):
+# 	print(my_list[count])
+
+my_list = []
+# for count in range(1, 11):
+#     my_list.append(count)
+# print(my_list)
+
+# for count in range(1, 11):
+#     my_list.insert(count-1, count)
+# print(my_list)
+
+count = 1
+while count<=10:
+    my_list.append(count)
+    count += 1
+print(my_list)
