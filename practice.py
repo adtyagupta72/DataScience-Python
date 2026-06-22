@@ -462,8 +462,13 @@ my_list = []
 #     my_list.insert(count-1, count)
 # print(my_list)
 
-count = 1
-while count<=10:
-    my_list.append(count)
-    count += 1
+# count = 1
+# while count<=10:
+#     my_list.append(count)
+#     count += 1
+# print(my_list)
+
+my_list = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]  # Creating an empty list.
+for count in range(10):
+    my_list[count] += 1
 print(my_list)
