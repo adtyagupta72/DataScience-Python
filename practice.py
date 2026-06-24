@@ -468,7 +468,33 @@ my_list = []
 #     count += 1
 # print(my_list)
 
-my_list = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]  # Creating an empty list.
-for count in range(10):
-    my_list[count] += 1
+# my_list = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]  # Creating an empty list.
+# for count in range(10):
+#     my_list[count] += 1
+# print(my_list)
+
+# my_list = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+# # Print the sum of all elements from the list
+# sum = 0
+# # for index in range(len(my_list)):
+# #     sum += my_list[index]
+
+# for element in my_list:
+#     sum += element
+
+# print("Sum:", sum)
+
+# a = 10
+# b = 20
+# print("a:", a)
+# print("b:", b)
+# #
+# a, b = b, a
+# print("a:", a)
+# print("b:", b)
+
+my_list = [10, 1, 8, 3, 5]
+print(my_list)
+my_list[0], my_list[4] = my_list[4], my_list[0]
+my_list[1], my_list[3] = my_list[3], my_list[1]
 print(my_list)
