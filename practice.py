@@ -493,8 +493,33 @@ my_list = []
 # print("a:", a)
 # print("b:", b)
 
-my_list = [10, 1, 8, 3, 5]
+# my_list = [10, 1, 8, 3, 5]
+# print(my_list)
+# my_list[0], my_list[4] = my_list[4], my_list[0]
+# my_list[1], my_list[3] = my_list[3], my_list[1]
+# print(my_list)
+
+'''
+index = 0 => my_list[index] => 8
+index +1 => my_list[index + 1] => 10
+
+compare my_list[index] > my_list[index + 1]
+    swap
+
+index += 1
+
+my_list[index] => 10
+my_list[index + 1] => 6
+
+
+
+my_list[index]
+'''
+my_list = [8, 10, 6, 2, 4]
 print(my_list)
-my_list[0], my_list[4] = my_list[4], my_list[0]
-my_list[1], my_list[3] = my_list[3], my_list[1]
+for index1 in range(len(my_list) - 1):
+    for index in range(len(my_list) - 1):
+        if( my_list[index] > my_list[index + 1] ):
+            my_list[index], my_list[index + 1] = my_list[index + 1], my_list[index]
+
 print(my_list)
