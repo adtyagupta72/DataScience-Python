@@ -516,16 +516,21 @@ my_list[index + 1] => 6
 my_list[index]
 '''
 # my_list = [8, 10, 6, 9, 2, 4, 5, 1, 3, 7]
-# print(my_list)
-# count = 0
-# for index1 in range(len(my_list) - 1):
-#     for index in range(len(my_list) - 1 - index1):
-#         count += 1
-#         if( my_list[index] > my_list[index + 1] ):
-#             my_list[index], my_list[index + 1] = my_list[index + 1], my_list[index]
+my_list = [1, 2, 3, 4, 5]
+swapped = 0
+print(my_list)
+count = 0
+for index1 in range(len(my_list) - 1):
+    for index in range(len(my_list) - 1 - index1):
+        count += 1
+        if( my_list[index] > my_list[index + 1] ):
+            my_list[index], my_list[index + 1] = my_list[index + 1], my_list[index]
+            swapped = 1
+    if swapped == 0:
+        break
 
-# print(my_list)
-# print("My program has run for :", count, "times")
+print(my_list)
+print("My program has run for :", count, "times")
 
 '''
 4   => 5th element sorted
@@ -534,7 +539,8 @@ my_list[index]
 1   => 2nd element sorted
 '''
 
-my_list = [8, 10, 6, 2, 4]  # list to sort
+# my_list = [8, 10, 6, 2, 4]  # list to sort
+my_list = [1, 2, 3, 4, 5]
 swapped = True  # It's a little fake, we need it to enter the while loop.
 count = 0
 while swapped:
