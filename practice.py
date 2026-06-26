@@ -515,11 +515,21 @@ my_list[index + 1] => 6
 
 my_list[index]
 '''
-my_list = [8, 10, 6, 2, 4]
+my_list = [8, 10, 6, 9, 2, 4, 5, 1, 3, 7]
 print(my_list)
+count = 0
 for index1 in range(len(my_list) - 1):
-    for index in range(len(my_list) - 1):
+    for index in range(len(my_list) - 1 - index1):
+        count += 1
         if( my_list[index] > my_list[index + 1] ):
             my_list[index], my_list[index + 1] = my_list[index + 1], my_list[index]
 
 print(my_list)
+print("My program has run for :", count, "times")
+
+'''
+4   => 5th element sorted
+3   => 4th element sorted
+2   => 3rd element sorted
+1   => 2nd element sorted
+'''
