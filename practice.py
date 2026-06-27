@@ -516,21 +516,21 @@ my_list[index + 1] => 6
 my_list[index]
 '''
 # my_list = [8, 10, 6, 9, 2, 4, 5, 1, 3, 7]
-my_list = [1, 2, 3, 4, 5]
-swapped = 0
-print(my_list)
-count = 0
-for index1 in range(len(my_list) - 1):
-    for index in range(len(my_list) - 1 - index1):
-        count += 1
-        if( my_list[index] > my_list[index + 1] ):
-            my_list[index], my_list[index + 1] = my_list[index + 1], my_list[index]
-            swapped = 1
-    if swapped == 0:
-        break
+# my_list = [1, 2, 3, 4, 5]
+# swapped = 0
+# print(my_list)
+# count = 0
+# for index1 in range(len(my_list) - 1):
+#     for index in range(len(my_list) - 1 - index1):
+#         count += 1
+#         if( my_list[index] > my_list[index + 1] ):
+#             my_list[index], my_list[index + 1] = my_list[index + 1], my_list[index]
+#             swapped = 1
+#     if swapped == 0:
+#         break
 
-print(my_list)
-print("My program has run for :", count, "times")
+# print(my_list)
+# print("My program has run for :", count, "times")
 
 '''
 4   => 5th element sorted
@@ -540,15 +540,58 @@ print("My program has run for :", count, "times")
 '''
 
 # my_list = [8, 10, 6, 2, 4]  # list to sort
-my_list = [1, 2, 3, 4, 5]
-swapped = True  # It's a little fake, we need it to enter the while loop.
-count = 0
-while swapped:
-    swapped = False  # no swaps so far
-    for i in range(len(my_list) - 1):
-        count += 1
-        if my_list[i] > my_list[i + 1]:
-            swapped = True  # a swap occurred!
-            my_list[i], my_list[i + 1] = my_list[i + 1], my_list[i]
-print(my_list)
-print("Loops are running for :", count, "Times")
+# my_list = [1, 2, 3, 4, 5]
+# swapped = True  # It's a little fake, we need it to enter the while loop.
+# count = 0
+# while swapped:
+#     swapped = False  # no swaps so far
+#     for i in range(len(my_list) - 1):
+#         count += 1
+#         if my_list[i] > my_list[i + 1]:
+#             swapped = True  # a swap occurred!
+#             my_list[i], my_list[i + 1] = my_list[i + 1], my_list[i]
+# print(my_list)
+# print("Loops are running for :", count, "Times")
+
+'''
+[8, 6, 2, 4, 10] => 10 > 4 => swapping
+swapped     True    False   True    True
+i(0-4)      0   1   2   3
+'''
+
+# my_list = [8, 10, 6, 2, 4]
+# my_list.sort()
+# print(my_list)
+
+
+lst = [5, 3, 1, 2, 4]
+# print(lst)
+# lst.reverse()
+# print(lst)  # outputs: [4, 2, 1, 3, 5]
+
+'''
+length = x
+[a, b, c, d, e, f, g]
+[g, f, e, d, c, b, a]
+
+0 - -1
+1 - -2
+-1 * (index +1)
+
+[ a, b, c, d, e, f, g, h, i, j]
+loop => 5
+a = j
+0 = -1 => (-1 * (index + 1))
+index = (-1 * (index + 1))
+
+index = len(lst) - (index + 1)
+'''
+
+# print(len(lst)//2)
+
+print(lst)
+for index in range(len(lst)//2):
+    # print(lst[index])
+    # lst[index], lst[(-1 * (index +1))] = lst[(-1 * (index +1))], lst[index]
+    lst[index], lst[len(lst) - (index + 1)] = lst[len(lst) - (index + 1)], lst[index]
+print(lst)
