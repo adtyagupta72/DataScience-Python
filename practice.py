@@ -636,14 +636,55 @@ index = len(lst) - (index + 1)
 # print("list_1:", list_1)
 
 
-my_list = [10, 8, 6, 4, 2]
-new_list = my_list[1:3]
-print(new_list)
+# my_list = [10, 8, 6, 4, 2]
+# new_list = my_list[1:3]
+# print(new_list)
 
-new_list = my_list[1:-1]
-print(new_list)
+# new_list = my_list[1:-1]
+# print(new_list)
 
-new_list = my_list[-1:1]
-print(new_list)
+# new_list = my_list[-1:1]
+# print(new_list)
 
-print(ord("A"))
+# print(ord("A"))
+
+# my_list = [10, 8, 6, 4, 2]
+# del my_list
+# print(my_list)
+
+
+# my_list = [0, 3, 12, 8, 2]
+# print(5 in my_list)
+# print(5 not in my_list)
+# print(12 in my_list)
+
+# lst = [3, 11, 5, 1, 9, 7, 15, 17, 13]
+# for i in range(len(lst)):
+#     if lst[i]>lst[i+1]:
+#         break
+# print("largest no.",lst[i])
+
+# my_list = [17, 3, 11, 5, 1, 9, 7, 15, 13]
+# largest = my_list[0]
+# # for index in range(1, len(my_list)):
+# #     if largest < my_list[index]:
+# #         largest = my_list[index]
+
+# for element in my_list:
+#     if largest < element:
+#         largest = element
+
+# print(largest)
+
+my_list = [17, 3, 11, 1, 9, 7, 15, 13, 25]
+# Search for 5 and print its index
+found = -1
+for index in range(len(my_list)):
+    if my_list[index] == 5:
+        found = index
+        break
+
+if found < 0:
+    print("5 not found in the list")
+else:
+    print("5 is found at ", found)
