@@ -589,9 +589,61 @@ index = len(lst) - (index + 1)
 
 # print(len(lst)//2)
 
-print(lst)
-for index in range(len(lst)//2):
-    # print(lst[index])
-    # lst[index], lst[(-1 * (index +1))] = lst[(-1 * (index +1))], lst[index]
-    lst[index], lst[len(lst) - (index + 1)] = lst[len(lst) - (index + 1)], lst[index]
-print(lst)
+# print(lst)
+# for index in range(len(lst)//2):
+#     # print(lst[index])
+#     # lst[index], lst[(-1 * (index +1))] = lst[(-1 * (index +1))], lst[index]
+#     lst[index], lst[len(lst) - (index + 1)] = lst[len(lst) - (index + 1)], lst[index]
+# print(lst)
+
+# lst = ["D", "F", "a", "Z"]
+# lst.sort()
+ 
+# print(lst)
+
+# print("A" > "a")
+
+# a = 3
+# b = 1
+# c = 2
+# lst = [a, c, b]
+# lst.sort()
+# print(lst)
+
+# a = "A"
+# b = "B"
+# c = "C"
+# d = " "
+# lst = [a, b, c, d]
+# lst.reverse()
+# print(lst)
+
+# list_1 = [1]
+# list_2 = list_1 # refrence copy
+# list_1[0] = 2
+# print(list_2)   #
+
+# a = 1
+# b = a
+# a = 2
+# print(a)
+# print(b)
+
+# list_1 = [1, 2, 3, 4]
+# list_2 = list_1[0:2]
+# list_1[0] = 2
+# print("list_2:", list_2)
+# print("list_1:", list_1)
+
+
+my_list = [10, 8, 6, 4, 2]
+new_list = my_list[1:3]
+print(new_list)
+
+new_list = my_list[1:-1]
+print(new_list)
+
+new_list = my_list[-1:1]
+print(new_list)
+
+print(ord("A"))
