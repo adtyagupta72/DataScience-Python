@@ -676,15 +676,82 @@ index = len(lst) - (index + 1)
 
 # print(largest)
 
-my_list = [17, 3, 11, 1, 9, 7, 15, 13, 25]
-# Search for 5 and print its index
-found = -1
-for index in range(len(my_list)):
-    if my_list[index] == 5:
-        found = index
-        break
+# my_list = [17, 3, 11, 1, 9, 7, 15, 13, 25]
+# # Search for 5 and print its index
+# found = -1
+# for index in range(len(my_list)):
+#     if my_list[index] == 5:
+#         found = index
+#         break
 
-if found < 0:
-    print("5 not found in the list")
-else:
-    print("5 is found at ", found)
+# if found < 0:
+#     print("5 not found in the list")
+# else:
+#     print("5 is found at ", found)
+
+# print("HEllo")
+# print("HEllo")
+# print("HEllo")
+# print("HEllo")
+
+# age = 10
+# Age = 20
+
+# myFriendsName = "LuvKush"       # Camel case
+# my_friends_name = "LuvKush"     # Snake case
+
+# myFriendsName()
+# my_friends_name()
+
+# MyFriendsName
+# My_Friends_Name
+
+# age = 4
+# print(age)
+# print("Hello")
+
+x = 5
+print(x)
+print(type(x))
+x = "Hello World"						
+print(x)
+print(type(x))
+x = 20.5	
+print(x)
+print(type(x))						
+x = 1j		
+print(x)
+print(type(x))						
+x = ["apple", "banana", "cherry"]	
+print(x)
+print(type(x))
+x = ("apple", "banana", "cherry")	
+print(x)
+print(type(x))
+x = range(6)
+print(x)
+print(type(x))						
+x = {"name" : "John", "age" : 36}	
+print(x)
+print(type(x))
+x = {"apple", "banana", "cherry"}	
+print(x)
+print(type(x))
+x = frozenset({"apple", "banana", "cherry"})	
+print(x)
+print(type(x))
+x = True								
+print(x)
+print(type(x))
+x = b"Hello"							
+print(x)
+print(type(x))
+x = bytearray(5)						
+print(x)
+print(type(x))
+x = memoryview(bytes(5))				
+print(x)
+print(type(x))
+x = None								
+print(x)
+print(type(x))
