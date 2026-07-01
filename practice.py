@@ -710,48 +710,79 @@ index = len(lst) - (index + 1)
 # print(age)
 # print("Hello")
 
-x = 5
-print(x)
-print(type(x))
-x = "Hello World"						
-print(x)
-print(type(x))
-x = 20.5	
-print(x)
-print(type(x))						
-x = 1j		
-print(x)
-print(type(x))						
-x = ["apple", "banana", "cherry"]	
-print(x)
-print(type(x))
-x = ("apple", "banana", "cherry")	
-print(x)
-print(type(x))
-x = range(6)
-print(x)
-print(type(x))						
-x = {"name" : "John", "age" : 36}	
-print(x)
-print(type(x))
-x = {"apple", "banana", "cherry"}	
-print(x)
-print(type(x))
-x = frozenset({"apple", "banana", "cherry"})	
-print(x)
-print(type(x))
-x = True								
-print(x)
-print(type(x))
-x = b"Hello"							
-print(x)
-print(type(x))
-x = bytearray(5)						
-print(x)
-print(type(x))
-x = memoryview(bytes(5))				
-print(x)
-print(type(x))
-x = None								
-print(x)
-print(type(x))
+# x = 5
+# print(x)
+# print(type(x))
+# x = "Hello World"						
+# print(x)
+# print(type(x))
+# x = 20.5	
+# print(x)
+# print(type(x))						
+# x = 1j		
+# print(x)
+# print(type(x))						
+# x = ["apple", "banana", "cherry"]	
+# print(x)
+# print(type(x))
+# x = ("apple", "banana", "cherry")	
+# print(x)
+# print(type(x))
+# x = range(6)
+# print(x)
+# print(type(x))						
+# x = {"name" : "John", "age" : 36}	
+# print(x)
+# print(type(x))
+# x = {"apple", "banana", "cherry"}	
+# print(x)
+# print(type(x))
+# x = frozenset({"apple", "banana", "cherry"})	
+# print(x)
+# print(type(x))
+# x = True								
+# print(x)
+# print(type(x))
+# x = b"Hello"							
+# print(x)
+# print(type(x))
+# x = bytearray(5)						
+# print(x)
+# print(type(x))
+# x = memoryview(bytes(5))				
+# print(x)
+# print(type(x))
+# x = None								
+# print(x)
+# print(type(x))
+
+# student_name = "Khushi"
+# age = 10
+# marks = 4
+
+# print("Student:", student_name, "Age:", age, "Marks:", marks)
+
+# print(f'Student: {student_name}, Age: {age}, Marks:{marks}')
+
+# x = y = z = 0
+# print(x)
+# print(y)
+# print(z)
+# a, b, c = 10, 20, 30
+# print(a)
+# print(b)
+# print(c)
+
+# print(10 // 4)
+# print(9 % 4)
+# print(2 ** 3)
+
+monthly_salary = float(input('Monthly salary (Rs.): '))
+annual_salary  = monthly_salary * 12
+daily_salary   = monthly_salary / 30
+tax = annual_salary * 0.10  # 10% tax
+print(f'Annual: Rs.{annual_salary:,.0f}')
+print(f'Daily:  Rs.{daily_salary:,.2f}')
+print(f'Tax:    Rs.{tax:,.2f}')
+print(f'Net:    Rs.{annual_salary - tax:,.0f}')
+
