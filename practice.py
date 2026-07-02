@@ -777,12 +777,61 @@ index = len(lst) - (index + 1)
 # print(9 % 4)
 # print(2 ** 3)
 
-monthly_salary = float(input('Monthly salary (Rs.): '))
-annual_salary  = monthly_salary * 12
-daily_salary   = monthly_salary / 30
-tax = annual_salary * 0.10  # 10% tax
-print(f'Annual: Rs.{annual_salary:,.0f}')
-print(f'Daily:  Rs.{daily_salary:,.2f}')
-print(f'Tax:    Rs.{tax:,.2f}')
-print(f'Net:    Rs.{annual_salary - tax:,.0f}')
+# monthly_salary = float(input('Monthly salary (Rs.): '))
+# annual_salary  = monthly_salary * 12
+# daily_salary   = monthly_salary / 30
+# tax = annual_salary * 0.10  # 10% tax
+# print(f'Annual: Rs.{annual_salary:,.0f}')
+# print(f'Daily:  Rs.{daily_salary:,.2f}')
+# print(f'Tax:    Rs.{tax:,.2f}')
+# print(f'Net:    Rs.{annual_salary - tax:,.0f}')
 
+# a = 10
+
+# # a += 1      #a = a + 1
+# # print(a)
+# # a %= 3
+# # print(a)
+
+# b = 20
+
+# print(a == b)
+# print(a != b)
+# print(a == 10)
+# print(a < b)
+# print(a > b)
+# print(a <= b)
+# print(a >= b)
+
+# print(2 << 1)
+# print()
+# c = 2
+# c <<= 2 # c = c << 2
+
+# && => and => multiplication
+
+'''
+a   b   a and b
+T   F   F
+F   T   F
+T   T   T
+F   F   F
+
+a   b   a or b
+T   F   T
+F   T   T
+T   T   T
+F   F   F
+'''
+
+a = 20
+b = 30
+
+print(a < b and a == 20)
+print(a > b and a == 20)
+
+print(a < b or a == 20)
+print(a > b or a == 20)
+
+print(not(a < b and a == 20))
+print(not(a > b and a == 20))
