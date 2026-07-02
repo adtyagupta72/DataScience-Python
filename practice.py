@@ -827,11 +827,58 @@ F   F   F
 a = 20
 b = 30
 
-print(a < b and a == 20)
-print(a > b and a == 20)
+# print(a < b and a == 20)
+# print(a > b and a == 20)
 
-print(a < b or a == 20)
-print(a > b or a == 20)
+# print(a < b or a == 20)
+# print(a > b or a == 20)
 
-print(not(a < b and a == 20))
-print(not(a > b and a == 20))
+# print(not(a < b and a == 20))
+# print(not(a > b and a == 20))
+
+# print(a is b)
+# print(a is not b)
+
+# x = 10      #["Maruti", "BMW"]
+# y = 10      #["Maruti", "BMW"]
+# z = x
+
+# print(x is y)
+# print(x is z)
+# print(y is z)
+
+# print(x is not y)
+# print(x is not z)
+# print(y is not z)
+
+# x = ["Maruti", "BMW"]
+
+# maruti = "Maruti"
+
+# print("Maruti" in x)
+# print(maruti in x)
+# print("Maruti1" in x)
+# print("Maruti" not in x)
+
+'''
+0 1 2 3 4 5 6 7 8 9
+=> 10
+0 1 => 2
+0 1 2 3 4 5 6 7 => 8 Octal
+0 1 2 3 4 5 6 7 8 9 A B C D E F => 16
+--------
+1 => 0000 0001 => 8-bit
+2 => 0000 0010
+3 => 0000 0011
+
+a = 10
+a & 2 => 10 & 2
+10 => 0000 1010
+2 =>  0000 0010
+    x
+     ----------
+     0000 0010
+
+'''
+print(10 & 2)
+print(10 ^ 2)
