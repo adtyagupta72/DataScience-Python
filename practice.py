@@ -880,5 +880,22 @@ a & 2 => 10 & 2
      0000 0010
 
 '''
-print(10 & 2)
-print(10 ^ 2)
+# print(10 & 2)
+# print(10 ^ 2)
+
+number1 = input("Enter a number:")
+print(number1)
+print(type(number1))
+# print(number1 + 10)
+
+number1 = int(number1)
+print(number1)
+print(type(number1))
+print(number1 + 10)
+
+print("Hello" + ", how are you?")
+
+x = int(input("Enter first value for sum: "))
+y = int(input("Enter second value for sum: "))
+z = x + y
+print("Sum: ",z)
