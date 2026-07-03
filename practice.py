@@ -883,19 +883,93 @@ a & 2 => 10 & 2
 # print(10 & 2)
 # print(10 ^ 2)
 
-number1 = input("Enter a number:")
-print(number1)
-print(type(number1))
+# number1 = input("Enter a number:")
+# print(number1)
+# print(type(number1))
+# # print(number1 + 10)
+
+# number1 = int(number1)
+# print(number1)
+# print(type(number1))
 # print(number1 + 10)
 
-number1 = int(number1)
-print(number1)
-print(type(number1))
-print(number1 + 10)
+# print("Hello" + ", how are you?")
 
-print("Hello" + ", how are you?")
+# x = int(input("Enter first value for sum: "))
+# y = int(input("Enter second value for sum: "))
+# z = x + y
+# print("Sum: ",z)
 
-x = int(input("Enter first value for sum: "))
-y = int(input("Enter second value for sum: "))
-z = x + y
-print("Sum: ",z)
+# name = input('Enter your name: ')          # Returns str
+# age  = int(input('Enter your age: '))      # Convert to int
+# gpa  = float(input('Enter your GPA: '))    # Convert to float
+# print(name)
+# print(type(name))
+# print(age)
+# print(type(age))
+# print(gpa)
+# print(type(gpa))
+
+# leg_a = float(input("Input first leg length: "))
+# leg_b = float(input("Input second leg length: "))
+# hypo = ((leg_a**2) + (leg_b**2)) ** .5
+# print("Hypotenuse length is", hypo)
+
+# print("+--------+")
+# print("|        |")
+# print("|        |")
+# print("|        |")
+# print("|        |")
+# print("+--------+")
+
+# str = "-" * 10
+# print(str)
+
+# print("123", end="--")
+# print("789", end="--")
+# print("456")
+
+
+# print("+" + 10 * "-" + "+")
+# print(("|" + " " * 10 + "|\n") * 5, end="")
+# print("+" + 10 * "-" + "+")
+
+# city = 'Bhopal'
+# #       012345   		← index positions
+# #      -6-5-4-3-2-1  	← negative indices (from end)
+ 
+# print(city[0])     # B   (first character)
+# print(city[2])     # o
+# print(city[-1])    # l   (last character)
+# print(city[-3])    # p
+
+# Slicing: string[start:stop:step]
+# name = 'Priya Sharma'
+# print(name[0:5])   # Priya  (index 0 to 4)
+# print(name[6:])    # Sharma (from index 6 to end)
+# print(name[:5])    # Priya  (from start to index 4)
+# print(name[::2])   # Pay hr  (every 2nd character)
+# print(name[::-1])  # amrahS ayirP  (reversed!)
+ 
+# # Length of string
+# print(len(city))   # 6
+# print(len(name))   # 12
+
+text = '  Hello python World!  '
+ 
+# Case
+print(text.upper())           # '  HELLO PYTHON WORLD!  '
+print(text.lower())           # '  hello python world!  '
+print(text.title())           # '  Hello Python World!  '
+print(text.capitalize())      # '  hello python world!  ' → first only
+ 
+# Strip whitespace
+print(text.strip())           # 'Hello Python World!'
+ 
+# Search
+print('python' in text)       # True
+print(text.find('python'))    # 8  (index where found, -1 if not found)
+print(text.count('l'))        # 3
+
+str = "hello how are YOU?"
+print(str.capitalize())
