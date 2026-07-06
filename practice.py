@@ -955,21 +955,45 @@ a & 2 => 10 & 2
 # print(len(city))   # 6
 # print(len(name))   # 12
 
-text = '  Hello python World!  '
+# text = '  Hello python World!  '
  
-# Case
-print(text.upper())           # '  HELLO PYTHON WORLD!  '
-print(text.lower())           # '  hello python world!  '
-print(text.title())           # '  Hello Python World!  '
-print(text.capitalize())      # '  hello python world!  ' → first only
+# # Case
+# print(text.upper())           # '  HELLO PYTHON WORLD!  '
+# print(text.lower())           # '  hello python world!  '
+# print(text.title())           # '  Hello Python World!  '
+# print(text.capitalize())      # '  hello python world!  ' → first only
  
-# Strip whitespace
-print(text.strip())           # 'Hello Python World!'
+# # Strip whitespace
+# print(text.strip())           # 'Hello Python World!'
  
-# Search
-print('python' in text)       # True
-print(text.find('python'))    # 8  (index where found, -1 if not found)
-print(text.count('l'))        # 3
+# # Search
+# print('python' in text)       # True
+# print(text.find('python'))    # 8  (index where found, -1 if not found)
+# print(text.count('l'))        # 3
 
-str = "hello how are YOU?"
-print(str.capitalize())
+# str = "hello how are YOU?"
+# print(str.capitalize())
+text = '  Hello python World!  '
+# Replace
+print(text.replace('Python', 'AI'))  # '  Hello AI World!  '
+ 
+# Split and Join
+csv = 'Rahul,22,Bhopal,Engineer'
+parts = csv.split(',')        # ['Rahul', '22', 'Bhopal', 'Engineer']
+print("parts: ",parts)
+print(parts[0])               # Rahul
+rejoined = ' | '.join(parts)  # 'Rahul | 22 | Bhopal | Engineer'
+print("rejoined: ", rejoined)
+
+# Check content
+print('hello123'.isalnum())   # True — all letters/digits
+print('hello123*'.isalnum())   # True — all letters/digits
+print('12345'.isdigit())      # True — all digits
+print('Python'.isalpha())     # True — all letters
+print('  '.isspace())         # True — all spaces
+
+# Start/end check
+email = 'student@gmail.com'
+# a@b.c
+print(email.endswith('.com'))  # True
+print(email.startswith('stu')) # True
