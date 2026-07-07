@@ -973,27 +973,49 @@ a & 2 => 10 & 2
 
 # str = "hello how are YOU?"
 # print(str.capitalize())
-text = '  Hello python World!  '
-# Replace
-print(text.replace('Python', 'AI'))  # '  Hello AI World!  '
+# text = '  Hello python World!  '
+# # Replace
+# print(text.replace('Python', 'AI'))  # '  Hello AI World!  '
  
-# Split and Join
-csv = 'Rahul,22,Bhopal,Engineer'
-parts = csv.split(',')        # ['Rahul', '22', 'Bhopal', 'Engineer']
-print("parts: ",parts)
-print(parts[0])               # Rahul
-rejoined = ' | '.join(parts)  # 'Rahul | 22 | Bhopal | Engineer'
-print("rejoined: ", rejoined)
+# # Split and Join
+# csv = 'Rahul,22,Bhopal,Engineer'
+# print(csv.split('a'))
+# parts = csv.split(',')        # ['Rahul', '22', 'Bhopal', 'Engineer']
+# print("parts: ",parts)
+# print(parts[0])               # Rahul
+# rejoined = ' | '.join(parts)  # 'Rahul | 22 | Bhopal | Engineer'
+# print("rejoined: ", rejoined)
 
-# Check content
-print('hello123'.isalnum())   # True — all letters/digits
-print('hello123*'.isalnum())   # True — all letters/digits
-print('12345'.isdigit())      # True — all digits
-print('Python'.isalpha())     # True — all letters
-print('  '.isspace())         # True — all spaces
+# # Check content
+# print('hello123'.isalnum())   # True — all letters/digits
+# print('hello123*'.isalnum())   # True — all letters/digits
+# print('12345'.isdigit())      # True — all digits
+# print('Python'.isalpha())     # True — all letters
+# print('  '.isspace())         # True — all spaces
 
-# Start/end check
-email = 'student@gmail.com'
-# a@b.c
-print(email.endswith('.com'))  # True
-print(email.startswith('stu')) # True
+# # Start/end check
+# email = 'student@gmail.com'
+# # a@b.c
+# print(email.endswith('.com'))  # True
+# print(email.startswith('stu')) # True
+
+name, marks, rank = 'Anita', 92.567, 3
+print(name, marks, rank)
+
+# Basic
+print(f'Hello, {name}!')
+ 
+# Format numbers
+print(f'Marks: {marks:.2f}')       # 92.57 (2 decimal places)
+print(f'Marks: {marks:.0f}')       # 93    (rounded)
+print(f'Count: {1000000:,}')       # 1,000,000 (comma separator)
+ 
+# Padding and alignment
+print(f'{name:<15}|{marks:>8.2f}|Rank:{rank}')  # left/right align
+# Anita          |   92.57|Rank:3
+name = "Adtya Gupta"
+print(f'{name:<15}|{marks:>8.2f}|Rank:{rank}')  # left/right align
+ 
+# Expressions inside {}
+price, gst = 500, 0.18
+print(f'Price:Rs.{price} | GST:Rs.{price*gst:.2f} | Total:Rs.{price*(1+gst):.2f}')
