@@ -999,23 +999,97 @@ a & 2 => 10 & 2
 # print(email.endswith('.com'))  # True
 # print(email.startswith('stu')) # True
 
-name, marks, rank = 'Anita', 92.567, 3
-print(name, marks, rank)
+# name, marks, rank = 'Anita', 92.567, 3
+# print(name, marks, rank)
 
-# Basic
-print(f'Hello, {name}!')
+# # Basic
+# print(f'Hello, {name}!')
  
-# Format numbers
-print(f'Marks: {marks:.2f}')       # 92.57 (2 decimal places)
-print(f'Marks: {marks:.0f}')       # 93    (rounded)
-print(f'Count: {1000000:,}')       # 1,000,000 (comma separator)
+# # Format numbers
+# print(f'Marks: {marks:.2f}')       # 92.57 (2 decimal places)
+# print(f'Marks: {marks:.0f}')       # 93    (rounded)
+# print(f'Count: {1000000:,}')       # 1,000,000 (comma separator)
  
-# Padding and alignment
-print(f'{name:<15}|{marks:>8.2f}|Rank:{rank}')  # left/right align
-# Anita          |   92.57|Rank:3
-name = "Adtya Gupta"
-print(f'{name:<15}|{marks:>8.2f}|Rank:{rank}')  # left/right align
+# # Padding and alignment
+# print(f'{name:<15}|{marks:>8.2f}|Rank:{rank}')  # left/right align
+# # Anita          |   92.57|Rank:3
+# name = "Adtya Gupta"
+# print(f'{name:<15}|{marks:>8.2f}|Rank:{rank}')  # left/right align
  
-# Expressions inside {}
-price, gst = 500, 0.18
-print(f'Price:Rs.{price} | GST:Rs.{price*gst:.2f} | Total:Rs.{price*(1+gst):.2f}')
+# # Expressions inside {}
+# price, gst = 500, 0.18
+# print(f'Price:Rs.{price} | GST:Rs.{price*gst:.2f} | Total:Rs.{price*(1+gst):.2f}')
+
+# print(2 == 2.)
+# var = 10
+# print(var = 10)
+
+#Comparision operators
+'''
+==
+<
+>
+<=
+>=
+
+'''
+
+# Read two numbers
+# number1 = int(input("Enter the first number: "))
+# number2 = int(input("Enter the second number: "))
+ 
+# # Choose the larger number
+# if number1 > number2: larger_number = number1
+# else: larger_number = number2
+ 
+# # Print the result
+# print("The larger number is:", larger_number)
+
+
+
+# Read three numbers
+# number1 = int(input("Enter the first number: "))
+# number2 = int(input("Enter the second number: "))
+# number3 = int(input("Enter the third number: "))
+ 
+# # We temporarily assume that the first number is the largest one. We will verify this soon.
+# # largest_number = number1
+ 
+# # We check if the second number is larger than the current largest_number and update the largest_number if needed.
+# # if number2 > largest_number:
+# #     largest_number = number2
+ 
+# # # We check if the third number is larger than the current largest_number and update the largest_number if needed.
+# # if number3 > largest_number:
+# #     largest_number = number3
+
+# largest_number = max(number1, number2, number3)
+# lowest_number = min(number1, number2, number3)
+
+
+# # Print the result
+# print("The largest number is:", largest_number)
+# print("The lowest number is:", lowest_number)
+
+'''
+30  largest
+20  
+10  
+
+'''
+
+# while True:
+#     print("I'm stuck inside a loop.")
+
+# Store the current largest number here.
+largest_number = -999999999
+ 
+number = int(input("Enter a number or type -1 to stop: "))
+ 
+while number != -1:   
+    if number > largest_number:
+        largest_number = number
+    number = int(input("Enter a number or type -1 to stop: "))
+ 
+print("The largest number is:", largest_number)
+
