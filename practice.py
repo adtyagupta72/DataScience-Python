@@ -1082,14 +1082,89 @@ a & 2 => 10 & 2
 #     print("I'm stuck inside a loop.")
 
 # Store the current largest number here.
-largest_number = -999999999
+# largest_number = -999999999
  
-number = int(input("Enter a number or type -1 to stop: "))
+# number = int(input("Enter a number or type -1 to stop: "))
  
-while number != -1:   
+# while number != -1:   
+#     if number > largest_number:
+#         largest_number = number
+#     number = int(input("Enter a number or type -1 to stop: "))
+ 
+# print("The largest number is:", largest_number)
+
+# counter = 0
+# while counter < 100:
+#     print(counter)
+#     counter += 1
+
+# counter = 0
+# for counter in range(100):
+#     print(counter)
+
+# '''
+# counter     0   1   2... 99     100
+# output      0   1   2... 99
+# '''
+
+# exit = 1
+
+# while exit != 0:
+#     exit = int(input("Enter number:"))
+#     print(exit)
+
+# for counter in range(10):
+#     print("The value of counter is currently", counter)
+#                   start, end, step
+# for counter in range(2, 8):
+#     print("The value of counter is currently: ", counter)
+
+# for counter in range(2, 8, 3):
+#     print("The value of counter is currently: ", counter)
+
+# power = 1
+# for expo in range(16):
+#     print("2 to the power of", expo, "is", power)
+#     power *= 2
+#     if expo == 7:
+#         break
+
+# power = 1
+# for expo in range(16):
+#     if expo == 7:
+#         continue
+#     print("2 to the power of", expo, "is", power)
+#     power *= 2
+    
+
+# print("---------Now I am out---------")
+
+# print("The break instruction:")
+# for counter in range(1, 6):
+#     if counter == 3:
+#         break
+#     print("Inside the loop.", counter)
+# print("Outside the loop.")
+
+# print("\nThe continue instruction:")
+# for counter in range(1, 6):
+#     if counter == 3:
+#         continue
+#     print("Inside the loop.", counter)
+# print("Outside the loop.")
+
+largest_number = -99999999
+counter = 0
+
+while True:
+    number = int(input("Enter a number or type -1 to end the program: "))
+    if number == -1:
+        break
+    counter += 1
     if number > largest_number:
         largest_number = number
-    number = int(input("Enter a number or type -1 to stop: "))
- 
-print("The largest number is:", largest_number)
 
+if counter != 0:
+    print("The largest number is", largest_number)
+else:
+    print("You haven't entered any number.")
