@@ -1169,12 +1169,38 @@ a & 2 => 10 & 2
 # else:
 #     print("You haven't entered any number.")
 
-i = 1
-j = not not i
-print(i)
-print(j)
+# i = 1
+# j = not not i
+# print(i)
+# print(j)
 
 '''
 Truthy:     1, 2, 3, -1, -20, "a", "Hello", [1, 2], {1:1}, " "
 Falsy:      0, "", [], {}, (), None, NULL
+
+numbers[0] = address in numbers + (size of element * index)
+             0x0000 + (2 * 0) => 0x0000
+             0x0000 + 2 => 0x0002
+
 '''
+
+numbers = [10, 5, 7, 2, 1]
+print(numbers)
+print(type(numbers))
+
+print(numbers[0])
+print(numbers[1])
+print(numbers[2])
+print(numbers[3])
+
+numbers[3] = 20
+print(numbers)
+
+numbers[2] = numbers[0]
+print(numbers)
+
+numbers[2], numbers[1] = numbers[1], numbers[2]
+print(numbers)
+
+del numbers[4]
+print(numbers)
