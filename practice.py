@@ -1153,18 +1153,28 @@ a & 2 => 10 & 2
 #     print("Inside the loop.", counter)
 # print("Outside the loop.")
 
-largest_number = -99999999
-counter = 0
+# largest_number = -99999999
+# counter = 0
 
-while True:
-    number = int(input("Enter a number or type -1 to end the program: "))
-    if number == -1:
-        break
-    counter += 1
-    if number > largest_number:
-        largest_number = number
+# while True:
+#     number = int(input("Enter a number or type -1 to end the program: "))
+#     if number == -1:
+#         break
+#     counter += 1
+#     if number > largest_number:
+#         largest_number = number
 
-if counter != 0:
-    print("The largest number is", largest_number)
-else:
-    print("You haven't entered any number.")
+# if counter != 0:
+#     print("The largest number is", largest_number)
+# else:
+#     print("You haven't entered any number.")
+
+i = 1
+j = not not i
+print(i)
+print(j)
+
+'''
+Truthy:     1, 2, 3, -1, -20, "a", "Hello", [1, 2], {1:1}, " "
+Falsy:      0, "", [], {}, (), None, NULL
+'''
