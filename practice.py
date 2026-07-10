@@ -1201,27 +1201,52 @@ numbers[0] = address in numbers + (size of element * index)
 
 # numbers[2], numbers[1] = numbers[1], numbers[2]
 # print(numbers)
-numbers = [10, 5, 7, 2, 1]
-print(len(numbers))
-del numbers[4]
-print(len(numbers))
-print(numbers)
+# numbers = [10, 5, 7, 2, 1]
+# print(len(numbers))
+# del numbers[4]
+# print(len(numbers))
+# print(numbers)
 
-print(len(numbers))
+# print(len(numbers))
 
-lengthOfList = len(numbers)
-print(lengthOfList)
+# lengthOfList = len(numbers)
+# print(lengthOfList)
 
-print(numbers[-1])
-print(numbers[-2])
-print(numbers[-4])
+# print(numbers[-1])
+# print(numbers[-2])
+# print(numbers[-4])
 
-a = 10
-print("Variable a:", a)
-print("Address of Variable a in integer:", id(a))
-print("Address of Variable a in hex:", hex(id(a)))
+# a = 10
+# print("Variable a:", a)
+# print("Address of Variable a in integer:", id(a))
+# print("Address of Variable a in hex:", hex(id(a)))
 
-print(hex(id(numbers)))
-print(hex(id(numbers[0])))
-print(hex(id(numbers[1])))
-print(hex(id(numbers[2])))
+# print(hex(id(numbers)))
+# print(hex(id(numbers[0])))
+# print(hex(id(numbers[1])))
+# print(hex(id(numbers[2])))
+
+list = [5,4,3,2,1]
+print(len(list))
+print(list)
+
+list.append(6)
+print(len(list))
+print(list)
+
+list.insert(0, 222)
+print(len(list))
+print(list)
+
+list = [11, 21, 31, 41, 51, 61, 71, 81, 91, 101]
+'''
+list[0]
+list[1]
+list[2]
+list[3]
+list[4]
+'''
+
+for index in range(len(list)):
+    # print(i)
+    print(list[index])
