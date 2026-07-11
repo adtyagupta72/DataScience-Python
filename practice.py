@@ -1226,27 +1226,56 @@ numbers[0] = address in numbers + (size of element * index)
 # print(hex(id(numbers[1])))
 # print(hex(id(numbers[2])))
 
-list = [5,4,3,2,1]
-print(len(list))
-print(list)
+# list = [5,4,3,2,1]
+# print(len(list))
+# print(list)
 
-list.append(6)
-print(len(list))
-print(list)
+# list.append(6)
+# print(len(list))
+# print(list)
 
-list.insert(0, 222)
-print(len(list))
-print(list)
+# list.insert(0, 222)
+# print(len(list))
+# print(list)
 
-list = [11, 21, 31, 41, 51, 61, 71, 81, 91, 101]
+# list = [11, 21, 31, 41, 51, 61, 71, 81, 91, 101]
+# '''
+# list[0]
+# list[1]
+# list[2]
+# list[3]
+# list[4]
+# '''
+
+# for index in range(len(list)):
+#     # print(i)
+#     print(list[index])
+
+# index = 0
+# while index < len(list):
+#     print(list[index])
+#     index += 1
+
+
+list = []
 '''
-list[0]
-list[1]
-list[2]
-list[3]
-list[4]
+0 -> 1
+1 -> 2
+2 -> 3
+.....
+9 -> 10
 '''
+# list.append(1)
+# list.append(2)
+# list.append(3)
+# list.append(4)
+# list.append(5)
 
-for index in range(len(list)):
-    # print(i)
-    print(list[index])
+for iterator in range(1, 11):
+    # print("---------")
+    # print(iterator)
+    # print("---------")
+    # list.append(iterator+1)
+    list.append(iterator)
+
+print(list)
