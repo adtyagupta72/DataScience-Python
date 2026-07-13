@@ -1257,7 +1257,7 @@ numbers[0] = address in numbers + (size of element * index)
 #     index += 1
 
 
-list = []
+# list = []
 '''
 0 -> 1
 1 -> 2
@@ -1269,13 +1269,58 @@ list = []
 # list.append(2)
 # list.append(3)
 # list.append(4)
-# list.append(5)
+# list.append(5)    
 
-for iterator in range(1, 11):
+# for iterator in range(1, 11):
     # print("---------")
     # print(iterator)
     # print("---------")
     # list.append(iterator+1)
-    list.append(iterator)
+    # list.append(iterator)
 
-print(list)
+# print(list)
+
+# my_list = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+
+# for index in range(len(my_list)):
+#     my_list[index] += 1
+
+# print(my_list)
+
+# sum = 0
+# for index in range(len(my_list)):
+#     sum = sum + my_list[index]
+
+# print(sum)
+# index = 0
+# for abc in my_list:
+#     print("my_list[",index,  "] => ",abc)
+#     index += 1
+
+# a = 10
+# b = 20
+
+# print("a: ", a)
+# print("b: ", b)
+
+# print("---------")
+
+# b = a
+# a = b
+
+# temp = b
+# b = a
+# a = temp
+
+# a, b = b, a
+
+# print("a: ", a)
+# print("b: ", b)
+
+my_list = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+
+print(my_list)
+# swap - 2nd and 5th values
+
+my_list[1], my_list[4] = my_list[4], my_list[1]
+print(my_list)
