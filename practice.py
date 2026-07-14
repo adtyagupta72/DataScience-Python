@@ -1324,15 +1324,21 @@ numbers[0] = address in numbers + (size of element * index)
 
 # my_list[1], my_list[4] = my_list[4], my_list[1]
 # print(my_list)
+list
+lst
+list = [1, 3, 2, 4, 5]#[8, 10, 6, 2, 4]
 
-list = [8, 10, 6, 2, 4]
 print(list)
 count = 0
+swapped = False
 for index in range(len(list) - 1):      # 4
     for index_inner in range(len(list) - 1 - index):    #4
         if list[index_inner] > list[index_inner + 1]:
             list[index_inner], list[index_inner + 1] = list[index_inner + 1], list[index_inner]
+            swapped = True
         count += 1
+    if not swapped:
+        break
 
 print(list)
 print(count)
