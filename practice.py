@@ -1317,10 +1317,35 @@ numbers[0] = address in numbers + (size of element * index)
 # print("a: ", a)
 # print("b: ", b)
 
-my_list = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+# my_list = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
 
-print(my_list)
-# swap - 2nd and 5th values
+# print(my_list)
+# # swap - 2nd and 5th values
 
-my_list[1], my_list[4] = my_list[4], my_list[1]
-print(my_list)
+# my_list[1], my_list[4] = my_list[4], my_list[1]
+# print(my_list)
+
+list = [8, 10, 6, 2, 4]
+print(list)
+count = 0
+for index in range(len(list) - 1):      # 4
+    for index_inner in range(len(list) - 1 - index):    #4
+        if list[index_inner] > list[index_inner + 1]:
+            list[index_inner], list[index_inner + 1] = list[index_inner + 1], list[index_inner]
+        count += 1
+
+print(list)
+print(count)
+
+'''
+10 > 4
+Dry Run
+[8, 10, 6, 2, 4] - 4 => [8, 6, 2, 4, 10]
+[8, 6, 2, 4, 10] - 3 =>
+[]               - 2
+                 - 1 =>
+Current list        [8, 6, 2, 4, 10]
+
+index(0-3)       0  
+index_inner(0-3) 0  1   2   3
+'''
