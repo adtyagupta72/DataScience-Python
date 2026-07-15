@@ -1324,24 +1324,37 @@ numbers[0] = address in numbers + (size of element * index)
 
 # my_list[1], my_list[4] = my_list[4], my_list[1]
 # print(my_list)
-list
-lst
-list = [1, 3, 2, 4, 5]#[8, 10, 6, 2, 4]
+# list
+# lst
+# list = [8, 10, 6, 2, 4]
+#[1, 3, 2, 4, 5]
 
-print(list)
-count = 0
-swapped = False
-for index in range(len(list) - 1):      # 4
-    for index_inner in range(len(list) - 1 - index):    #4
-        if list[index_inner] > list[index_inner + 1]:
-            list[index_inner], list[index_inner + 1] = list[index_inner + 1], list[index_inner]
-            swapped = True
-        count += 1
-    if not swapped:
-        break
+# print(list)
+# count = 0
+# swapped = False
+# for index in range(len(list) - 1):      # 4
+#     for index_inner in range(len(list) - 1 - index):    #4
+#         if list[index_inner] > list[index_inner + 1]:
+#             list[index_inner], list[index_inner + 1] = list[index_inner + 1], list[index_inner]
+#             swapped = True
+#         count += 1
+#     if not swapped:
+#         break
 
-print(list)
-print(count)
+# list.sort()
+# # list = sorted(list)
+# # list.sorted()
+# print(list)
+# list.reverse()
+# print(list)
+
+# lst = ["D", "F", "A", "Z"]
+# lst.sort()
+ 
+# print(lst)
+
+
+# print(count)
 
 '''
 10 > 4
@@ -1355,3 +1368,34 @@ Current list        [8, 6, 2, 4, 10]
 index(0-3)       0  
 index_inner(0-3) 0  1   2   3
 '''
+# list = [8, 10, 6, 2, 4]
+# list.sort()
+# # list = sorted(list)
+# print(list)
+# list.reverse()
+# print(list)
+
+# lst = ["D", "F", "A", "Z"]
+# lst.sort()
+ 
+# print(lst)
+
+
+# my_list = [0, 3, 12, 8, 2]
+# print(5 in my_list)
+# print(5 not in my_list)
+# print(12 in my_list)
+
+# row = []
+# for i in range(8):
+#     row.append("WHITE_PAWN")
+
+# row = ["WHITE_PAWN" for i in range(8)]
+
+# print(row)
+
+#List comprehension
+
+squares = [x ** 2 for x in range(10)]
+
+print(squares)
