@@ -1415,3 +1415,25 @@ for i in range(8):
     board.append(row)
 
 print(board)
+
+'''
+Cafe Management
+z
+Dev - Devlopment / Dev Environment      dev.cafemanagement.com
+Testing - Stage Environment             stage.cafemanagement.com
+Client Testing - UAT environment        uat.cafemanagement.com
+Users - Production Evironment           cafemanagement.com
+
+Dev     - Development branch
+        - feature/v1.0/khushi
+        - bugfix/v1.1/khushi
+|
+stage   - stage branch
+|
+uat     - uat branch
+|
+Prod    - main branch
+
+'''
+print("Checking branch changes!")
+print("Again checking changes!")
