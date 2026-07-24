@@ -1622,24 +1622,58 @@ rooms:          20
 # message("price", 5)
 # message("number", "number")
 
-def print_grade(name, marks):
-    grade = ""
-    if marks < 50:
-        grade = "D"
-    elif marks < 60:
-        grade = "C"
-    elif marks < 75:
-        grade = "B"
-    elif marks < 90:
-        grade = "A"
-    elif marks >= 90:
-        grade = "A+"
-    print(f'Hello {name}, your Grade from {marks} is {grade}!')
+# def print_grade(name, marks):
+#     grade = ""
+#     if marks < 50:
+#         grade = "D"
+#     elif marks < 60:
+#         grade = "C"
+#     elif marks < 75:
+#         grade = "B"
+#     elif marks < 90:
+#         grade = "A"
+#     elif marks >= 90:
+#         grade = "A+"
+#     print(f'Hello {name}, your Grade from {marks} is {grade}!')
 
-print_grade("Kaushal", 0)
-print_grade("Dipesh", 80)
-print_grade("Harshit", 70)
-print_grade("Luvkush", 60)
-print_grade("Shivani", 95)
-print_grade("Kushi", 55)
-print_grade(55, "Kiran")
+# print_grade("Kaushal", 0)
+# print_grade("Dipesh", 80)
+# print_grade("Harshit", 70)
+# print_grade("Luvkush", 60)
+# print_grade("Shivani", 95)
+# print_grade("Kushi", 55)
+# print_grade(55, "Kiran")
+
+# def introduction(first_name, last_name = "NA"):
+#     print("Hello, my name is", first_name, last_name)
+# # Keyword Argument Passing
+# introduction(first_name = "James", last_name = "Bond")
+# introduction(last_name = "Bond", first_name = "James")
+# introduction("Bond", "James")
+# introduction("Adtya")
+# introduction("Adtya", "Gupta")
+
+# def introduction(first_name, last_name):
+#     print("Hello, my name is", first_name, last_name)
+ 
+# introduction(surname="Skywalker", first_name="Luke")
+
+# def adding(a, b, c):
+#     print(a, "+", b, "+", c, "=", a + b + c)
+# # a + b + c
+# adding(1, 2, 3)
+# adding(c = 1, a = 2, b = 3)	
+# adding(3, c = 1, b = 2)	
+# adding(a = 1, 3, b = 2)	#Error
+# adding(3, a = 1, b = 2)	#Error
+
+def happy_new_year(wishes = True):
+    print("Three...")
+    print("Two...")
+    print("One...")
+    if not wishes:
+        return
+    print("Happy New Year!")
+
+happy_new_year()
+happy_new_year(False)
